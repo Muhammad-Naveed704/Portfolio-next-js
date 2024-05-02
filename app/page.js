@@ -6,12 +6,13 @@ const Homepage = () => {
       <Image src="/hero.jpg" alt="" fill className="object-contain" />
     </div>
     {/* text container */}
-    <div className="h-1/2 lg:h-full lg:w-1/2 gap-8 items-center justify-center">
+    <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
       {/* title */}
-      <h1 className="text-4xl md:text-6xl font-bold">loremdjk dndkldnc  dkn,kjh</h1>
+      <h1 className="text-4xl md:text-6xl font-bold">Crafting Digital Experiences Disigning Tomorrow </h1>
       {/* desc */}
-      <p className="md-text-xl">loremdjk dndkldnc  dkn,kjh</p>
-      <div className="flex gap-4 pl-3"> 
+      <p className="md-text-xl">Receive $10,000 scholarships based on your performance in the Professional MBA Online at Florida International University, the 4th largest public university in the US.
+</p>
+      <div className="flex gap-4 w-full"> 
         <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white" >View My Work</button>
         <button className="p-4 rounded-lg ring-1 ring-black " >Contact Me</button>
         
