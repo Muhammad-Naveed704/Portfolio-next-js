@@ -1,6 +1,6 @@
  "use client"
  import React from 'react'
-import {motion} from "framer-motion"
+ 
 function TestPage() {
   const varients ={
     variant1:{
