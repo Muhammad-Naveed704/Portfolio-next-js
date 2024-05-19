@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./navLink";
-import { motion, stagger } from "framer-motion";
+import { color, motion, stagger } from "framer-motion";
 
 const links = [
-  { url: "/", title: "Home" },
+  { url: "/", title: "Home"},
   { url: "/about", title: "About" },
   { url: "/portfolio", title: "Portfolio" },
   { url: "/contact", title: "Contact" },
@@ -20,7 +20,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: 45,
-      backgroundColor: "rgb(255,255,255)",
+      backgroundColor: "black",
     },
   };
   const centerVariants = {
@@ -37,7 +37,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: -45,
-      backgroundColor: "rgb(255,255,255)",
+      backgroundColor: "black",
     },
   };
   const listVariants = {
@@ -64,10 +64,11 @@ const Navbar = () => {
   };
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
-      <div className="hidden md:flex gap-4 w-1/3">
+      <div className="hidden md:flex gap-4 w-1/3"> 
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
+        
       </div>
 
       {/* logo */}
@@ -75,7 +76,7 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          className="text-sm bg-red-400 rounded-md p-1 font-semibold flex items-center justify-center"
         >
           <span className="text-white mr-1">Mern</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
@@ -83,30 +84,21 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
+      <div className="flex gap-6 w-1/3">
+        <Link href="https://www.linkedin.com/in/muhammad-naveed-598197230/">
+          <Image src="/linkedin.png" width={30} height={30} />
         </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
+        <Link href="https://github.com/Muhammad-Naveed704">
+          <Image src="/githubsvg.png" width={30} height={30} />
         </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
+        <Link href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+          <Image src="/gmail.png" width={30} height={30} />
         </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
+        <Link href="https://www.instagram.com/muhammadnaveed7884?igsh=MXFmMmh6aGcxZ3oxMg==">
+          <Image src="/instagram.png" width={30} height={30} />
         </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
-        </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
-        </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
-        </Link>
-        <Link href="#">
-          <Image src="/githubsvg.png" width={24} height={24} />
+        <Link href="https://api.whatsapp.com/send?phone=923442862704&text=hi%20my%20name%20is%20Muhammad%20Naveed">
+          <Image src="/whatsapp.png" width={30} height={30} />
         </Link>
       </div>
       {/* responsive */}
@@ -118,17 +110,17 @@ const Navbar = () => {
           <motion.dev
             variants={topVariants}
             animate={open ? "opened" : "closed "}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-10 h-1 bg-white rounded origin-left"
           ></motion.dev>
           <motion.dev
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded"
+            className="w-10 h-1 bg-white rounded"
           ></motion.dev>
           <motion.dev
             variants={botomVariants}
             animate={open ? "opened" : "closed "}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-10 h-1 bg-white rounded origin-left"
           ></motion.dev>
         </button>
         {/* menu list */}
@@ -137,7 +129,7 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            className="absolute top-0 left-0 w-screen h-screen bg-white text-black flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
               <motion.div

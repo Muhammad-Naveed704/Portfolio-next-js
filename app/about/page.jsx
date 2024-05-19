@@ -22,34 +22,28 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
+      <div className="h-full overflow-scroll  lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY title */}
 
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl text-white">Professional Journey</h1>
+            <div className="w-64 h-1 rounded bg-red-400 -mt-11"></div>
             {/* BIOGRAPHY desc */}
 
-            <p className="text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
-              fugiat eaque recusandae quam vel consequuntur accusantium nihil
-              maiores est! Nulla rem fugit explicabo perspiciatis! Beatae
-              dolorum dolore consectetur totam quibusdam. Rem, eius error! Cum
-              recusandae itaque ipsam deleniti inventore tempore non earum nemo
-              asperiores, cumque possimus! Facilis quae, expedita labore sit
-              incidunt iusto quasi eius blanditiis, dicta maxime modi
-              exercitationem.
+            <p className="text-lg  text-white text-justify">
+            My journey into the world of technology began with an intermediate education in Pre-Engineering, which provided me with a strong analytical and problem-solving background. This foundation was further solidified through the Saylani Mass IT Training Program, where I specialized in the MERN stack. This intensive program equipped me with practical, hands-on experience and a deep understanding of modern web development technologies
             </p>
             {/* BIOGRAPHY quote */}
 
-            <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <span className="text-justify text-white">
+            Passionate MERN stack developer dedicated to creating innovative web applications and continuously advancing my technical expertise
             </span>
             {/* BIOGRAPHY sign svg */}
 
-            <div className="self-end">Muhammad Naveed</div>
+            <div className="self-end from-neutral-50 text-white">Muhammad Naveed</div>
 
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -95,16 +89,16 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* SKILL CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div className="flex flex-col gap-12 -mt-12 md:-mt-24 xl:-mt-32 justify-center" ref={skillRef}>
             {/* SKILL title */}
-
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl text-white"
             >
-              SKILLS
+              SKILLS 
+              <h1 className="mt-5"><span className="text-red-400">FrontEnd</span> Development</h1>
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
@@ -113,48 +107,85 @@ const AboutPage = () => {
               transition={{ delay: 0.2 }}
               className=" flex gap-4 flex-wrap"
             >
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              HTML
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              CSS
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              JavaScript
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Bootstrap
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              React
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Next.js
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Redux
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              React Native
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Tailwind CSS
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              TypeScript
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              jQuery
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Styled-components
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Framer Motion
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Github
               </div>
+              
+            </motion.div>
+            <motion.h1
+              initial={{ x: "-300px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl text-white"
+            >
+               
+        <span className="text-red-400">BackEnd</span> Development
+            </motion.h1>
+            {/* SKILL LIST */}
+            <motion.div
+              initial={{ x: "-300px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className=" flex gap-4 flex-wrap"
+            >
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+             Node.js
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Express.js
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              MongoDB
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              MySQL
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              WebSocket
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-red-400 text-white hover:bg-white hover:text-black">
+              Firebase 
+              </div>
+             
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -212,7 +243,7 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl text-white"
             >
               EXPERIENCE
             </motion.h1>
@@ -228,25 +259,25 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* job title */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">
-                    Javascript enginer
+                    Frontend Developer 
                   </div>
                   {/* job desc */}
-                  <div className=" p-3 text-sm italic">
-                    i am a mern stack developer xyz company
+                  <div className=" p-3 text-sm italic text-white">
+                  I am working as a frontend developer on Upwork
                   </div>
                   {/* job data */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-white text-sm font-semibold">
                     2024 - Present
                   </div>
                   {/* company name */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    MAMQ
+                    Upwork
                   </div>
                 </div>
                 {/* center */}
                 <div className="w-1/6 ">
                   {/* line */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative ">
+                  <div className="w-1 h-full bg-red-400 rounded relative ">
                     {/* line circle */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
@@ -261,7 +292,7 @@ const AboutPage = () => {
                 {/* center */}
                 <div className="w-1/6 ">
                   {/* line */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative ">
+                  <div className="w-1 h-full bg-red-400 rounded relative ">
                     {/* line circle */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
@@ -270,19 +301,19 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* job title */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">
-                    Javascript enginer
+                  Full Stack Development Intern
                   </div>
                   {/* job desc */}
-                  <div className=" p-3 text-sm italic">
-                    i am a mern stack developer xyz company
+                  <div className=" p-3 text-sm italic text-white">
+                  I am interning as a Full Stack Developer at Cognifyz Technologies
                   </div>
                   {/* job data */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                  <div className="p-3  text-sm font-semibold text-white">
+                    2024 - April
                   </div>
                   {/* company name */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    MAMQ
+                  Cognifyz Technologies
                   </div>
                 </div>
               </div>
@@ -292,25 +323,25 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* job title */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">
-                    Javascript enginer
+                    Operation Supervisor
                   </div>
                   {/* job desc */}
-                  <div className=" p-3 text-sm italic">
-                    i am a mern stack developer xyz company
+                  <div className=" p-3 text-sm italic text-white">
+                  I work as an Operations and Inventory Supervisor at Connect Logistics
                   </div>
                   {/* job data */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                  <div className="p-3 text-white text-sm font-semibold">
+                    2020 - Jan 2024
                   </div>
                   {/* company name */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    MAMQ
+                  Connect Logistics
                   </div>
                 </div>
                 {/* center */}
                 <div className="w-1/6 ">
                   {/* line */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative ">
+                  <div className="w-1 h-full bg-red-400 rounded relative ">
                     {/* line circle */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
@@ -322,7 +353,7 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden  xl:1/3 lg:block w-1/3  sticky top-0 z-30 xl:w-1/2">
+        <div className="hidden  xl:1/4 lg:block  w-1/3  sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>

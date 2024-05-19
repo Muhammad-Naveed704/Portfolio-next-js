@@ -1,15 +1,20 @@
-"use client"
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React from 'react'
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
-const NavLink = ({link}) => {
-  const pathName = usePathname()
-  
-    return (
+const NavLink = ({ link }) => {
+  const pathName = usePathname();
 
-    <Link className={`rounded p-1 ${pathName === link.url && "bg-black text-white" }`} href={link.url}>{link.title}</Link>
+  return (
+    <Link
+      className={`rounded p-1 cursor-pointer text-white ${
+        pathName === link.url && "bg-red-400 text-white"
+      }`}
+      href={link.url}
+    >
+      {link.title}
+    </Link>
   );
 };
-
-export default NavLink
+export default NavLink;
