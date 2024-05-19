@@ -209,7 +209,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex gap-6 w-1/3">
+      <div className="hidden md:flex gap-6 w-1/3">
         <Link href="https://www.linkedin.com/in/muhammad-naveed-598197230/">
           <Image src="/linkedin.png" width={30} height={30} alt="LinkedIn" />
         </Link>
